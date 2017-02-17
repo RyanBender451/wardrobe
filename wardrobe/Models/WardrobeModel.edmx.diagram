@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="addf0fdb01994ad8b370b4e0c8f60bd6" Name="Diagram1">
-        <EntityTypeShape EntityType="OutfitsModel.Accessory" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="OutfitsModel.Bottom" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="OutfitsModel.Outfit" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="OutfitsModel.Sho" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="OutfitsModel.Top" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OutfitsModel.Accessory" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OutfitsModel.Bottom" Width="1.5" PointX="1.875" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OutfitsModel.Outfit" Width="1.5" PointX="2.875" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OutfitsModel.Sho" Width="1.875" PointX="3.875" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OutfitsModel.Top" Width="1.5" PointX="4.75" PointY="1.5" IsExpanded="true" />
         <AssociationConnector Association="OutfitsModel.FK_Outfit_Accessories" ManuallyRouted="false" />
         <AssociationConnector Association="OutfitsModel.FK_Outfit_Bottoms" ManuallyRouted="false" />
         <AssociationConnector Association="OutfitsModel.FK_Outfit_Shoes" ManuallyRouted="false" />
