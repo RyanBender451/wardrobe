@@ -26,7 +26,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.BottomPhoto, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.BottomPhoto, new { htmlAttributes = new { disable = "disable", @readonly = "readonly", @class = "form-control", @Value = "~/Content/images/termleg.jpg" } })
+                @Html.EditorFor(model => model.BottomPhoto, new { htmlAttributes = new { @class = "form-control", @Value = "~/Content/images/goldpant.png" } })
                 @Html.ValidationMessageFor(model => model.BottomPhoto, "", new { @class = "text-danger" })
             </div>
         </div>

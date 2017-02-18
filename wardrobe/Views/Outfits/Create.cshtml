@@ -7,6 +7,7 @@
 <h2>Create</h2>
 
 
+
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
@@ -22,11 +23,11 @@
                 @Html.ValidationMessageFor(model => model.OutfitName, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        
         <div class="form-group">
             @Html.LabelFor(model => model.OutfitPhoto, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.OutfitPhoto, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.OutfitPhoto, new { htmlAttributes = new { @class = "form-control", @Value = "~/Content/images/goldfull.png" } })
                 @Html.ValidationMessageFor(model => model.OutfitPhoto, "", new { @class = "text-danger" })
             </div>
         </div>

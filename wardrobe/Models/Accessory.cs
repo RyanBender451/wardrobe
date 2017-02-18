@@ -11,7 +11,8 @@ namespace wardrobe.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Accessory
     {
         public Accessory()
@@ -20,11 +21,17 @@ namespace wardrobe.Models
         }
     
         public int AccessoryID { get; set; }
+        [Display(Name = "Accessories Name: ")]
         public string AccessoryName { get; set; }
+        [Display(Name = "Accessories Photo: ")]
         public string AccessoryPhoto { get; set; }
+        [Display(Name = "Accessories Type: ")]
         public string AccessoryType { get; set; }
+        [Display(Name = "Accessories Color: ")]
         public string AccessoryColor { get; set; }
+        [Display(Name = "What Season: ")]
         public string AccessorySeason { get; set; }
+        [Display(Name = "Accessories Occasion: ")]
         public string AccessoryOccasion { get; set; }
     
         public virtual ICollection<Outfit> Outfits { get; set; }

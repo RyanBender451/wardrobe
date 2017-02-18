@@ -11,15 +11,22 @@ namespace wardrobe.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Outfit
     {
         public int OutfitID { get; set; }
+        [Display(Name = "Supersuit Name: ")]
         public string OutfitName { get; set; }
+        [Display(Name = "Supersuit Photo: ")]
         public string OutfitPhoto { get; set; }
+        [Display(Name = "Upper Body: ")]
         public int TopID { get; set; }
+        [Display(Name = "Lower Body: ")]
         public int BottomID { get; set; }
+        [Display(Name = "Feet: ")]
         public int ShoeID { get; set; }
+        [Display(Name = "Accessories: ")]
         public int AccessoryID { get; set; }
     
         public virtual Accessory Accessory { get; set; }

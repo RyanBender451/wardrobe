@@ -11,7 +11,8 @@ namespace wardrobe.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Top
     {
         public Top()
@@ -20,11 +21,17 @@ namespace wardrobe.Models
         }
     
         public int TopID { get; set; }
+        [Display(Name = "Top Name: ")]
         public string TopName { get; set; }
+        [Display(Name = "Photo: ")]
         public string TopPhoto { get; set; }
+        [Display(Name = "Top Type: ")]
         public string TopType { get; set; }
+        [Display(Name = "Top Color: ")]
         public string TopColor { get; set; }
+        [Display(Name = "Season: ")]
         public string TopSeason { get; set; }
+        [Display(Name = "Occasion: ")]
         public string TopOccasion { get; set; }
     
         public virtual ICollection<Outfit> Outfits { get; set; }

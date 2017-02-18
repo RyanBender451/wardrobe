@@ -11,7 +11,8 @@ namespace wardrobe.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Bottom
     {
         public Bottom()
@@ -20,11 +21,17 @@ namespace wardrobe.Models
         }
     
         public int BottomID { get; set; }
+        [Display(Name = "Bottoms Name: ")]
         public string BottomName { get; set; }
+        [Display(Name = "Photo: ")]
         public string BottomPhoto { get; set; }
+        [Display(Name = "Bottom Type: ")]
         public string BottomType { get; set; }
+        [Display(Name = "Color: ")]
         public string BottomColor { get; set; }
+        [Display(Name = "Season: ")]
         public string BottomSeason { get; set; }
+        [Display(Name = "Occasion ")]
         public string BottomOccasion { get; set; }
     
         public virtual ICollection<Outfit> Outfits { get; set; }

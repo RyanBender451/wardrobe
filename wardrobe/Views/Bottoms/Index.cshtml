@@ -5,11 +5,46 @@
 }
 
 <h2>Index</h2>
+<!-- Split button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-danger">Where to?</button>
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="/Outfits/Index">OutFit Index</a></li>
+        <li><a href="/Accessories/Index">Accessories Index</a></li>
+        <li><a href="/Tops/Index">Tops Index</a></li>
+        <li><a href="/Bottoms/Index">Bottoms Index</a></li>
+        <li><a href="/Shoes/Index">Shoes Index</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="/Home/Index">Home</a></li>
+
+    </ul>
+</div>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-6 col-md-6">
+            <div class="thumbnail reviewthumb">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.BottomName)</h3>
+                    <img src="@Url.Content(item.BottomPhoto)" height="100" />
+
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.BottomName)
@@ -38,7 +73,7 @@
             @Html.DisplayFor(modelItem => item.BottomName)
         </td>
         <td>
-            @*@Html.DisplayFor(modelItem => item.BottomPhoto)*@
+            @Html.DisplayFor(modelItem => item.BottomPhoto)
             <img src="@Url.Content(item.BottomPhoto)" height="50" />
         </td>
         <td>
@@ -61,4 +96,4 @@
     </tr>
 }
 
-</table>
+</table>*@
