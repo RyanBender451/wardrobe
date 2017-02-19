@@ -9,7 +9,8 @@
 <div>
     <h4>Outfit</h4>
     <hr />
-    <dl class="dl-horizontal">
+
+    @*<dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.OutfitName)
         </dt>
@@ -23,7 +24,7 @@
         </dt>
 
         <dd>
-            @*@Html.DisplayFor(model => model.OutfitPhoto)*@
+            @Html.DisplayFor(model => model.OutfitPhoto)
             <img src="@Url.Content(Model.OutfitPhoto)" height="75" />
         </dd>
 
@@ -59,9 +60,10 @@
             @Html.DisplayFor(model => model.Top.TopName)
         </dd>
 
-    </dl>
+    </dl>*@
 </div>
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }, new { @class = " btn btn-primary", role = "button" })
+    @Html.ActionLink("Back to List", "Index", null, new { @class = " btn btn-primary", role = "button" })
 </p>

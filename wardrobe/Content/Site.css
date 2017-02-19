@@ -1,14 +1,75 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('images/comicbg.jpg');
+    background-size:cover;
 }
-
+/*added background image to the nav */
+div.navbar-fixed-top {
+    background-image: url('images/evilbg.jpg');
+    background-size:cover;
+    font-family: 'Days One', sans-serif;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
+/*Jumbotron's coloring*/
+.jumbotron{
+    
+    background-color:silver;
+    opacity:0.7;
+}
+/*Thumbnail*/
+/*Text changing*/
+div.reviewthumb {
+    background-image: url('images/villwallcr.jpg');
+    background-size:cover;
+}
+h1.suptext{
+font-family: 'Days One', sans-serif;
+color:darkviolet;
+}
+p.lead{
+ font-family: 'Days One', sans-serif;
+ color:ghostwhite;
+}
+h2.h2hero{
+    font-family: 'Bangers', cursive;
+    color:crimson;
+}
+h4.h4hero{
+    font-family: 'Bangers', cursive;
+    color:crimson;
+}
+p.phero{
+font-family: 'Rock Salt', cursive;
+color:crimson;
+}
 
+h3.h3hero{
+    font-family: 'Bangers', cursive;
+    color:crimson;
+}
+h3.text-center{
+    font-family: 'Bangers', cursive;
+    color:crimson;
+}
+/*extra space for label*/
+span.label{
+    margin-right:5px;
+    font-family:'Audiowide', cursive;
+    color:ghostwhite;
+}
+a.btn-primary {
+    font-family: 'Audiowide', cursive;
+}
+a.btn-warning{
+    font-family:'Audiowide', cursive;
+    background-color:darkblue;
+    color:snow;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -21,4 +82,20 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+div.former {
+    background-image: url('images/champwallcr.jpg');
+}
+label.labh{
+    font-family: 'Rock Salt', cursive;
+    color:crimson;
+}
+input.texth{
+    background-color:aquamarine;
+    font-family: 'Days One', sans-serif;
+}
+select.selh{
+    background-color:aquamarine;
+    font-family: 'Days One', sans-serif;
+
 }

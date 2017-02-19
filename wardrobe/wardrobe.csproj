@@ -203,6 +203,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\champwallcr.jpg" />
+    <Content Include="Content\images\comicbg.jpg" />
+    <Content Include="Content\images\evilbg.jpg" />
     <Content Include="Content\images\fullbodh.png" />
     <Content Include="Content\images\goldbod.png" />
     <Content Include="Content\images\goldboot.png" />
@@ -230,6 +233,7 @@
     <Content Include="Content\images\termfoot.jpg" />
     <Content Include="Content\images\termhead.jpg" />
     <Content Include="Content\images\termleg.jpg" />
+    <Content Include="Content\images\villwallcr.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

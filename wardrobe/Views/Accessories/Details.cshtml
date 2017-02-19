@@ -3,65 +3,28 @@
 @{
     ViewBag.Title = "Details";
 }
+<div class="container">
+    <h2 class="h2hero">Details</h2>
 
-<h2>Details</h2>
-
-<div>
-    <h4>Accessory</h4>
+    <h4 class="h4hero">Accessory</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryName)
-        </dt>
+    <div class="row">
+        <div class="col-lg-3">
+            <img src="@Url.Content(Model.AccessoryPhoto)" height="100" />
+        </div>
+        <div class="col-lg-8">
 
-        <dd>
-            @Html.DisplayFor(model => model.AccessoryName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryPhoto)
-        </dt>
-
-        <dd>
-            @*@Html.DisplayFor(model => model.AccessoryPhoto)*@
-            <img src="@Url.Content(Model.AccessoryPhoto)" height="75" />
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AccessoryType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryColor)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AccessoryColor)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessorySeason)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AccessorySeason)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.AccessoryOccasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.AccessoryOccasion)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+            <h3 class="h3hero"><span class="label label-primary">Name:</span>@Html.DisplayFor(model => model.AccessoryName)</h3>
+            <h3 class="h3hero"><span class="label label-primary">Type:</span> @Html.DisplayFor(model => model.AccessoryType)</h3>
+            <h3 class="h3hero"><span class="label label-primary">Color:</span>@Html.DisplayFor(model => model.AccessoryColor)</h3>
+            <h3 class="h3hero"><span class="label label-primary">Season:</span> @Html.DisplayFor(model => model.AccessorySeason)</h3>
+            <h3 class="h3hero"><span class="label label-primary">Occasion:</span>@Html.DisplayFor(model => model.AccessoryOccasion)</h3>
+        </div>
+    </div>
+    <div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }, new { @class = " btn btn-primary", role = "button" })
+            @Html.ActionLink("Back to List", "Index", null, new { @class = " btn btn-primary", role = "button" })
+        </p>
+    </div>
+</div>    
