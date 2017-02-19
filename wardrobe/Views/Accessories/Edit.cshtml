@@ -10,7 +10,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+    <!-- updated the form added new coloring and background-->
     <div class="form-horizontal former">
         <h4 class="h4hero">Accessory</h4>
         <hr />
@@ -65,7 +65,7 @@
                 @Html.ValidationMessageFor(model => model.AccessoryOccasion, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <!--Ending the Form group-->
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-primary" />

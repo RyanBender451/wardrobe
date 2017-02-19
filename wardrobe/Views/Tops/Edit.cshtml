@@ -10,9 +10,9 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+    <!--Form was changed to fit the theme-->
     <div class="form-horizontal former">
-        <h4>Top</h4>
+        <h4 class="h4hero">Top</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.TopID)
@@ -64,7 +64,7 @@
                 @Html.ValidationMessageFor(model => model.TopOccasion, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <!-- save button styled-->
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Save" class="btn btn-primary" />
@@ -72,7 +72,7 @@
         </div>
     </div>
 }
-
+<!--button changed-->
 <div>
     @Html.ActionLink("Back to List", "Index", null, new { @class = " btn btn-primary", role = "button" })
 </div>

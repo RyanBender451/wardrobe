@@ -10,7 +10,9 @@
 
 </head>
 <body>
+    <!--Header/Navbar started-->
     <div class="page-header">
+        <!--Used the inverse nav as the base-->
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -19,14 +21,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <!--the link to the homepage index-->
                     @Html.ActionLink("Wardrobe Door", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 </div>
+                <!--navbar with the links to About and Contact pages-->
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav homenav">
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     </ul>
                 </div>
+                <!--bottom part of the bar that is lined to all the different pages-->
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav homenav">
                         <li>@Html.ActionLink("Outfits", "Index", "OutFits")</li>
@@ -38,10 +43,12 @@
                 </div>
             </div>
         </div>
+        <!--End header/Navbar-->
         </div>
         <div class="container body-content">
             @RenderBody()
             <hr />
+            <!--footer has a 'warning' and glyphicon -->
             <footer>
                 <p>&copy; @DateTime.Now.Year - <span class="glyphicon glyphicon-info-sign"></span>These suits are for heroes only.  No Villians</p>
             </footer>

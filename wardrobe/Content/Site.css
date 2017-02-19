@@ -62,6 +62,7 @@ span.label{
     font-family:'Audiowide', cursive;
     color:ghostwhite;
 }
+/*Button edits*/
 a.btn-primary {
     font-family: 'Audiowide', cursive;
 }
@@ -70,12 +71,21 @@ a.btn-warning{
     background-color:darkblue;
     color:snow;
 }
+.btn-primary{
+font-family: 'Audiowide', cursive;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
+
 .dl-horizontal dt {
     white-space: normal;
+    font-family: 'Days One', sans-serif;
 }
+.dl-horizontal dd {
+    font-family: 'Days One', sans-serif;
+}
+
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,

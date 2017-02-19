@@ -5,7 +5,7 @@
 }
 <div class="container">
     <h2 class="h2hero">Details</h2>
-
+    @* details were changed to a row/col with the photo first then next to it the info all customized *@
     <h4 class="h4hero">Accessory</h4>
     <hr />
     <div class="row">
@@ -13,7 +13,7 @@
             <img src="@Url.Content(Model.AccessoryPhoto)" height="100" />
         </div>
         <div class="col-lg-8">
-
+           
             <h3 class="h3hero"><span class="label label-primary">Name:</span>@Html.DisplayFor(model => model.AccessoryName)</h3>
             <h3 class="h3hero"><span class="label label-primary">Type:</span> @Html.DisplayFor(model => model.AccessoryType)</h3>
             <h3 class="h3hero"><span class="label label-primary">Color:</span>@Html.DisplayFor(model => model.AccessoryColor)</h3>
