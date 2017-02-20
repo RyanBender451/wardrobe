@@ -79,11 +79,19 @@ font-family: 'Audiowide', cursive;
 */
 
 .dl-horizontal dt {
-    white-space: normal;
+    white-space:normal; 
+    width:inherit;  
     font-family: 'Days One', sans-serif;
 }
 .dl-horizontal dd {
     font-family: 'Days One', sans-serif;
+}
+/*Added some css for the images*/
+img.heroimg{
+    height:400px;
+}
+img.heropart{
+    height:100px;
 }
 
 

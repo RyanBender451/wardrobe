@@ -21,13 +21,13 @@ namespace wardrobe.Models
         }
     
         public int TopID { get; set; }
-        [Display(Name = "Top Name: ")]
+        [Display(Name = "Name: ")]
         public string TopName { get; set; }
         [Display(Name = "Photo: ")]
         public string TopPhoto { get; set; }
-        [Display(Name = "Top Type: ")]
+        [Display(Name = "Type: ")]
         public string TopType { get; set; }
-        [Display(Name = "Top Color: ")]
+        [Display(Name = "Color: ")]
         public string TopColor { get; set; }
         [Display(Name = "Season: ")]
         public string TopSeason { get; set; }

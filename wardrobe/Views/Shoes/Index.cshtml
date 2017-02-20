@@ -19,7 +19,7 @@
         <div class="col-lg-6 col-md-6">
             <div class="thumbnail reviewthumb">
                 <h3 class="text-center">@Html.DisplayFor(modelItem => item.ShoeName)</h3>
-                <img src="@Url.Content(item.ShoePhoto)" height="100" />
+                <img class ="heropart" src="@Url.Content(item.ShoePhoto)" />
                 <div class="text-center">
                     <div class="btn-group">
                         @Html.ActionLink("Details", "Details", new { id = item.ShoeID }, new { @class = " btn btn-warning", role = "button" })

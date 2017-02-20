@@ -21,17 +21,17 @@ namespace wardrobe.Models
         }
     
         public int AccessoryID { get; set; }
-        [Display(Name = "Accessories Name: ")]
+        [Display(Name = "Name: ")]
         public string AccessoryName { get; set; }
-        [Display(Name = "Accessories Photo: ")]
+        [Display(Name = "Photo: ")]
         public string AccessoryPhoto { get; set; }
-        [Display(Name = "Accessories Type: ")]
+        [Display(Name = "Type: ")]
         public string AccessoryType { get; set; }
-        [Display(Name = "Accessories Color: ")]
+        [Display(Name = "Color: ")]
         public string AccessoryColor { get; set; }
-        [Display(Name = "What Season: ")]
+        [Display(Name = "Season: ")]
         public string AccessorySeason { get; set; }
-        [Display(Name = "Accessories Occasion: ")]
+        [Display(Name = "Occasion: ")]
         public string AccessoryOccasion { get; set; }
     
         public virtual ICollection<Outfit> Outfits { get; set; }

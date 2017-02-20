@@ -21,7 +21,7 @@
             <div class="thumbnail reviewthumb">
 
                 <h3 class="text-center">@Html.DisplayFor(modelItem => item.TopName)</h3>
-                <img src="@Url.Content(item.TopPhoto)" he height="100" />
+                <img class="heropart" src="@Url.Content(item.TopPhoto)" />
                 <div class="text-center">
                     <div class="btn-group">
                         @Html.ActionLink("Details", "Details", new { id = item.TopID }, new { @class = " btn btn-warning", role = "button" })

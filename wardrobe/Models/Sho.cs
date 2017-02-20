@@ -21,13 +21,13 @@ namespace wardrobe.Models
         }
     
         public int ShoeID { get; set; }
-        [Display(Name = "Shoe Name: ")]
+        [Display(Name = "Name: ")]
         public string ShoeName { get; set; }
         [Display(Name = "Photo: ")]
         public string ShoePhoto { get; set; }
-        [Display(Name = "Shoe Type: ")]
+        [Display(Name = "Type: ")]
         public string ShoeType { get; set; }
-        [Display(Name = "Shoe Color: ")]
+        [Display(Name = "Color: ")]
         public string ShoeColor { get; set; }
         [Display(Name = "Season: ")]
         public string ShoeSeason { get; set; }
